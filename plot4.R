@@ -21,7 +21,7 @@ with(dataToUse,{
     plot(x = dataToUse$Datetime, y = as.character(dataToUse$Sub_metering_1), col = "black", type ="l", xlab = "", ylab = "Energy sub metering")
     lines(x = dataToUse$Datetime, y = as.character(dataToUse$Sub_metering_2), col = "red")
     lines(x = dataToUse$Datetime, y = as.character(dataToUse$Sub_metering_3), col = "blue")
-    legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, bty = "n",
+    legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, bty = "n", cex = 0.75, 
       legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
     )
   }
